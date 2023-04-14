@@ -31,3 +31,14 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    gap: 15px;
+
+    .mail {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

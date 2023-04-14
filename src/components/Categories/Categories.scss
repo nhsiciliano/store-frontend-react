@@ -47,3 +47,13 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .categories {
+    height: 60vh;
+
+    .row {
+      flex-direction: column;
+    }
+  }
+}

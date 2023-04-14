@@ -11,6 +11,7 @@ import Favorites from "../Favorites/Favorites";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false)
   const [open, setOpen] = useState(false)
   const [favs, setFavs] = useState(false)
   const products = useSelector((state) => state.cart.products);
@@ -19,6 +20,22 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="wrapper">
+        <div className="hamb" onClick={() => setMenu(!menu)}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
+        <ul className="hambmenu" onClick={() => setMenu(false)} style={{right: menu ? "0px" : "-650vw"}}>
+          <li>
+            <Link className ="link" to="/products/1">Women</Link>
+          </li>
+          <li>
+            <Link className ="link" to="/products/2">Men</Link>
+          </li>
+          <li>
+            <Link className ="link" to="/products/3">Children</Link>
+          </li>
+        </ul>
         <div className="left">
           <div className="item">
             <img src="/img/en.png" alt="" />

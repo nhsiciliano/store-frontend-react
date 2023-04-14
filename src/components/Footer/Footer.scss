@@ -54,3 +54,19 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin: 20px 30px;
+
+    .top {
+      flex-direction: column;
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+      padding: 0px 15px;
+      margin: 15px 15px;
+    }
+  }

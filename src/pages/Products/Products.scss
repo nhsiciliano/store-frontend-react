@@ -36,3 +36,24 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .products {
+    flex-direction: column;
+    padding: 20px 40px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    
+    .left {
+      position: relative;
+    }
+
+    .right {
+      margin-top: 50px;
+
+      .catImg {
+        display: none;
+      }
+    }
+  }
+}

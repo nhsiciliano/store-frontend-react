@@ -3,3 +3,9 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 480px) {
+  .list {
+    flex-direction: column;
+  }
+}
