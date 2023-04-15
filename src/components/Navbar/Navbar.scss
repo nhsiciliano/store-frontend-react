@@ -115,6 +115,11 @@
 
         .right {
           .icons {
+            .link {
+              .search-icon {
+                display: none;
+              }
+            }
             .cartIcon {
               margin-right: 10px;
             }

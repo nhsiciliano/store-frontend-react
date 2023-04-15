@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
           <div className="icons">
             <Link className="link" to="/results">
-              <SearchIcon />
+              <SearchIcon className="search-icon" />
             </Link>
             <div className="cartIcon" onClick={()=>setFavs(!favs)}>
               {
